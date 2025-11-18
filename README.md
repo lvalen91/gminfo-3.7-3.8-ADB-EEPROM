@@ -4,9 +4,11 @@ EEPROM Modification to Enable ADB Access, Disables Authorized Secure ADB Client 
 Using a dump tool/software, extract the firmware from the indentified IC. Using any Hex editor, flip the following. Then write back to IC, tripple check your work.
 
 For example using minipro on macOS with an XGecu Programmer
+<pre>
 minipro -p "M24C64" -r dump.bin
 minipro -p "M24C64" -w modified.bin
 minipro -p "M24C64" -r verify.bin
+</pre>
 
 ===============================================
 
